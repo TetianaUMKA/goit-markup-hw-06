@@ -395,48 +395,49 @@
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <form name="order_service">
-          <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-          <div class="form-item">
-            <label for="user_name" class="modal-label">Ім'я</label>
-            <input type="text" class="modal-input" name="Ім'я" id="user_name" />
-            <div class="input-tumb">
-              <svg class="icon-form" width="18" height="18">
-                <use href="./images/sprite.svg#icon-form-name"></use>
-              </svg>
-            </div>
+        <form name="order_service" class="modal-form">
+          <h3 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h3>
+          <div class="modal-form-item">
+            <label for="user_name" class="modal-form-label">Ім'я</label>
+            <input type="text" class="modal-form-input" name="Ім'я" id="user_name" />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-form-name"></use>
+            </svg>
           </div>
-          <div class="form-item">
-            <label for="user_tel" class="modal-label">Телефон</label>
-            <input type="tel" class="modal-input" name="Ім'я" id="user_tel" />
-            <div class="input-tumb">
-              <svg class="icon-form" width="18" height="18">
-                <use href="./images/sprite.svg#icon-form-phone"></use>
-              </svg>
-            </div>
+          <div class="modal-form-item">
+            <label for="user_tel" class="modal-form-label">Телефон</label>
+            <input type="tel" class="modal-form-input" name="Ім'я" id="user_tel" />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-form-phone"></use>
+            </svg>
           </div>
-          <div class="form-item">
-            <label for="user_email" class="modal-label">Пошта</label>
-            <input type="email" class="modal-input" name="Пошта" id="user_email" />
-            <div class="input-tumb">
-              <svg class="icon-form" width="18" height="18">
-                <use href="./images/sprite.svg#icon-form-email"></use>
-              </svg>
-            </div>
+          <div class="modal-form-item">
+            <label for="user_email" class="modal-form-label">Пошта</label>
+            <input type="email" class="modal-form-input" name="Пошта" id="user_email" />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-form-email"></use>
+            </svg>
           </div>
-          <div class="form-item coments">
-            <label for="user_coment" class="modal-label coment">Коментар</label>
-            <textarea class="modal-textarea" name="Коментар" placeholder="Введіть текст" id="user_coment"></textarea>
+          <div class="modal-form-item coment">
+            <label for="user_coment" class="modal-form-label">Коментар</label>
+            <textarea
+              class="modal-form-textarea"
+              name="Коментар"
+              placeholder="Введіть текст"
+              id="user_coment"
+            ></textarea>
           </div>
-          <label class="checkbox">
+          <div class="modal-form-checkbox">
             <input
               type="checkbox"
               name="form_checkbox"
               value="Погоджуюся з розсилкою та приймаю Умови договору"
               class="checkbox-sign"
             />
-            <span>Погоджуюся з розсилкою та приймаю</span><a href="#" class="checkbox-link">Умови договору</a>
-          </label>
+            <label class="checkbox-label">
+              <span>Погоджуюся з розсилкою та приймаю</span><a href="#" class="checkbox-link">Умови договору</a>
+            </label>
+          </div>
           <button type="submit" class="form-sumbit">Відправити</button>
         </form>
       </div>
