@@ -386,6 +386,17 @@
             </li>
           </ul>
         </div>
+        <form name="form-subscription" class="form-subscription">
+          <label for="subscription" class="subscription">Підпишіться на розсилку</label>
+          <input
+            class="subscriber-email"
+            type="email"
+            placeholder="E-mail"
+            name="E-mail подписчика"
+            id="subscription"
+          />
+          <button type="submit" class="subscription-sumbit">Підписатися</button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -406,7 +417,7 @@
           </div>
           <div class="modal-form-item">
             <label for="user_tel" class="modal-form-label">Телефон</label>
-            <input type="tel" class="modal-form-input" name="Ім'я" id="user_tel" />
+            <input type="tel" class="modal-form-input" name="Телефон" id="user_tel" />
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-form-phone"></use>
             </svg>
@@ -428,14 +439,18 @@
             ></textarea>
           </div>
           <div class="modal-form-checkbox">
-            <input
-              type="checkbox"
-              name="form_checkbox"
-              value="Погоджуюся з розсилкою та приймаю Умови договору"
-              class="checkbox-sign"
-            />
             <label class="checkbox-label">
-              <span>Погоджуюся з розсилкою та приймаю</span><a href="#" class="checkbox-link">Умови договору</a>
+              <input
+                type="checkbox"
+                name="form_checkbox"
+                value="Погоджуюся з розсилкою та приймаю Умови договору"
+                class="checkbox-sign"
+              />
+              <svg class="icon-checkbox" width="16" height="15">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="checkbox-link">Умови договору</a>
             </label>
           </div>
           <button type="submit" class="modal-form-sumbit">Відправити</button>
