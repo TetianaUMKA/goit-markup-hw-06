@@ -353,7 +353,7 @@
             </ul>
           </address>
         </div>
-        <div class="socials">
+        <div>
           <p class="socials-invite">Приєднуйтесь</p>
           <ul class="socials-list">
             <li class="socials-item">
@@ -386,17 +386,25 @@
             </li>
           </ul>
         </div>
-        <form name="form-subscription" class="form-subscription">
-          <label for="subscription" class="subscription">Підпишіться на розсилку</label>
-          <input
-            class="subscriber-email"
-            type="email"
-            placeholder="E-mail"
-            name="E-mail подписчика"
-            id="subscription"
-          />
-          <button type="submit" class="subscription-sumbit">Підписатися</button>
-        </form>
+        <div>
+          <b class="title-form">Підпишіться на розсилку</b>
+          <form name="form_subscription" class="form-subscription">
+            <label for="subscription" class="subscription"></label>
+            <input
+              class="input-subscriber-email"
+              type="email"
+              placeholder="E-mail"
+              name="subscriber_email"
+              id="subscription"
+            />
+            <button type="submit" class="subscription-sumbit">
+              Підписатися
+              <svg class="subscription-sumbit-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -410,21 +418,21 @@
           <h3 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h3>
           <div class="modal-form-item">
             <label for="user_name" class="modal-form-label">Ім'я</label>
-            <input type="text" class="modal-form-input" name="Ім'я" id="user_name" />
+            <input type="text" class="modal-form-input" name="user_name" id="user_name" />
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-form-name"></use>
             </svg>
           </div>
           <div class="modal-form-item">
             <label for="user_tel" class="modal-form-label">Телефон</label>
-            <input type="tel" class="modal-form-input" name="Телефон" id="user_tel" />
+            <input type="tel" class="modal-form-input" name="user_tel" id="user_tel" />
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-form-phone"></use>
             </svg>
           </div>
           <div class="modal-form-item">
             <label for="user_email" class="modal-form-label">Пошта</label>
-            <input type="email" class="modal-form-input" name="Пошта" id="user_email" />
+            <input type="email" class="modal-form-input" name="user_email" id="user_email" />
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-form-email"></use>
             </svg>
@@ -433,7 +441,7 @@
             <label for="user_coment" class="modal-form-label">Коментар</label>
             <textarea
               class="modal-form-textarea"
-              name="Коментар"
+              name="user_coment"
               placeholder="Введіть текст"
               id="user_coment"
             ></textarea>
