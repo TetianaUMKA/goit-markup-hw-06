@@ -659,6 +659,8 @@ address {
 }
 
 .modal-invitation {
+    display: block;
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
