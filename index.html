@@ -389,14 +389,15 @@
         <div>
           <b class="title-form">Підпишіться на розсилку</b>
           <form name="form_subscription" class="form-subscription">
-            <label for="subscription" class="subscription"></label>
-            <input
-              class="input-subscriber-email"
-              type="email"
-              placeholder="E-mail"
-              name="subscriber_email"
-              id="subscription"
-            />
+            <label>
+              <input
+                class="input-subscriber-email"
+                type="email"
+                placeholder="E-mail"
+                name="subscriber_email"
+                id="subscription"
+              />
+            </label>
             <button type="submit" class="subscription-sumbit">
               Підписатися
               <svg class="subscription-sumbit-icon" width="24" height="24">
@@ -414,8 +415,8 @@
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <form name="order_service" class="modal-form">
-          <h3 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <b class="modal-invitation">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="modal-form" name="order_service">
           <div class="modal-form-item">
             <label for="user_name" class="modal-form-label">Ім'я</label>
             <input type="text" class="modal-form-input" name="user_name" id="user_name" />
