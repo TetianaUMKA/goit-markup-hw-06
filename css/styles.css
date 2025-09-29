@@ -58,8 +58,8 @@ img {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .container {
@@ -276,6 +276,10 @@ img {
 .team-section {
   background-color: #f4f4fd;
 }
+.team-section .container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
 
 .team-title {
   margin-bottom: 72px;
@@ -283,11 +287,12 @@ img {
 
 .team-list {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -545,6 +550,21 @@ img {
     max-width: 768px;
   }
 
+  .team-section .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   .footer > .container {
     text-align: left;
     justify-content: flex-start;
@@ -572,10 +592,24 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .team-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
   }
 
   .footer {
