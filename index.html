@@ -120,7 +120,11 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/member-1.jpg"
+                srcset="
+                  ./images/member-1-1x.jpg 1x,
+                  ./images/member-1-2x.jpg 2x
+                "
+                src="./images/member-1-1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -160,7 +164,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/member-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="
+                  ./images/member-2-1x.jpg 1x,
+                  ./images/member-2-2x.jpg 2x
+                "
+                src="./images/member-2-1x.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-item-text-content">
                 <h3 class="team-item-title">Tom Ford</h3>
                 <p class="team-item-text">Frontend Developer</p>
@@ -198,7 +210,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/member-3.jpg"
+                srcset="
+                  ./images/member-3-1x.jpg 1x,
+                  ./images/member-3-2x.jpg 2x
+                "
+                src="./images/member-3-1x.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -239,7 +255,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/member-4.jpg"
+                srcset="
+                  ./images/member-4-1x.jpg 1x,
+                  ./images/member-4-2x.jpg 2x
+                "
+                src="./images/member-4-1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -287,11 +307,27 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/portfolio-1.jpg"
-                  alt="Presentation of Banking App layouts"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-1-1x.jpg 1x,
+                      ./images/portfolio-1-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-1-mob-1x.jpg 1x,
+                      ./images/portfolio-1-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio-1-1x.jpg"
+                    alt="Scanning QR code for Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -305,11 +341,27 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/portfolio-2.jpg"
-                  alt="Scanning QR code for Cashless Payment"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-2-1x.jpg 1x,
+                      ./images/portfolio-2-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-2-mob-1x.jpg 1x,
+                      ./images/portfolio-2-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio-2-1x.jpg"
+                    alt="Scanning QR code for Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -323,11 +375,27 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/portfolio-3.jpg"
-                  alt="Using gadgets for Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-3-1x.jpg 1x,
+                      ./images/portfolio-3-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-3-mob-1x.jpg 1x,
+                      ./images/portfolio-3-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio-3-1x.jpg"
+                    alt="Scanning QR code for Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -341,11 +409,27 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/portfolio-4.jpg"
-                  alt="A nice car with a driver that using a smartphone app"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-4-1x.jpg 1x,
+                      ./images/portfolio-4-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-4-mob-1x.jpg 1x,
+                      ./images/portfolio-4-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio-4-1x.jpg"
+                    alt="Scanning QR code for Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -359,11 +443,27 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/portfolio-5.jpg"
-                  alt="A phone with a variety of beautiful screens"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-5-1x.jpg 1x,
+                      ./images/portfolio-5-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-5-mob-1x.jpg 1x,
+                      ./images/portfolio-5-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio-5-1x.jpg"
+                    alt="Scanning QR code for Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -377,11 +477,27 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/portfolio-6.jpg"
-                  alt="A woman that looks at a smartphone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-6-1x.jpg 1x,
+                      ./images/portfolio-6-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-6-mob-1x.jpg 1x,
+                      ./images/portfolio-6-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio-6-1x.jpg"
+                    alt="Scanning QR code for Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
