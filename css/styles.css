@@ -561,7 +561,7 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
-  .team-section .container {
+  .team-section > .container {
     padding-left: 108px;
     padding-right: 108px;
   }
@@ -591,11 +591,11 @@ img {
   }
 
   .footer > .container {
-    text-align: left;
-    justify-content: flex-start;
-    column-gap: 24px;
     padding-left: 108px;
     padding-right: 108px;
+    justify-content: flex-start;
+    column-gap: 24px;
+    text-align: left;
   }
 
   .footer-social {
@@ -684,7 +684,6 @@ img {
   }
 
   .footer > .container {
-    flex-wrap: nowrap;
     padding-left: 15px;
     padding-right: 15px;
     gap: 0;
