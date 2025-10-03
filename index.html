@@ -54,7 +54,7 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu is-open">
+      <div class="mob-menu">
         <div class="container mob-menu-container">
           <button class="mob-menu-close-btn" type="button">
             <svg class="mob-menu-close-icon" width="8" height="8">
@@ -129,7 +129,7 @@
       <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button hero-button" type="button">
+          <button class="button hero-button" type="button" data-modal-open-btn>
             Order Service
           </button>
         </div>
@@ -653,9 +653,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="modal-close-button" type="button">
+        <button class="modal-close-button" type="button" data-modal-close-btn>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-cross"></use>
           </svg>
@@ -742,5 +742,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mob-menu.js" defer></script>
+    <script src="./js/data-modal.js" defer></script>
   </body>
 </html>
